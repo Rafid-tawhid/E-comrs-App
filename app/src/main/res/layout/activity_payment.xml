@@ -1,0 +1,420 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.PaymentActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/home_bg"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:padding="5dp"
+                android:layout_marginLeft="7dp"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/menu_bar"
+                >
+
+            </ImageView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:text="Shirts"
+                android:textSize="22dp"
+                android:textColor="#A0A0A0"
+                android:layout_marginRight="10dp"
+                android:fontFamily="monospace"
+                android:layout_marginLeft="80dp"
+                >
+
+            </TextView>
+            <androidx.appcompat.widget.SearchView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_margin="5dp"
+                android:paddingLeft="20dp"
+
+                app:queryHint="Search"
+
+
+
+
+                >
+
+            </androidx.appcompat.widget.SearchView>
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:padding="5dp"
+                android:layout_marginLeft="7dp"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/profile"
+                >
+
+            </ImageView>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/back"
+            android:text="Back to Cart"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/back4"
+            android:textColor="@color/black"
+            ></TextView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+           android:textSize="24dp"
+
+            android:text="DELIVERY METHOD"
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:textColor="@color/black"
+            ></TextView>
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            >
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Delivery by currior services?"
+                >
+
+            </RadioButton>
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Delivery to the Store?">
+
+            </RadioButton>
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Home delivery?">
+
+            </RadioButton>
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="24dp"
+
+            android:text="CHECKOUT"
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:textColor="@color/black"
+            ></TextView>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40sp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/ed_bg"
+            android:hint="Phone"
+            android:id="@+id/paymentProduct"
+            android:paddingLeft="15dp"
+            android:textSize="20dp">
+
+        </EditText>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40sp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/ed_bg"
+            android:textSize="20dp"
+            android:hint="Name"
+            android:id="@+id/paymentName"
+            android:paddingLeft="15dp"
+            >
+
+        </EditText>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40sp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/ed_bg"
+            android:textSize="20dp"
+            android:hint="City"
+            android:id="@+id/paymentCity"
+            android:paddingLeft="15dp"
+            >
+
+        </EditText>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40sp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/ed_bg"
+            android:textSize="20dp"
+            android:id="@+id/paymentAdds"
+            android:hint="Address"
+            android:paddingLeft="15dp"
+            >
+
+        </EditText>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40sp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/ed_bg"
+            android:textSize="20dp"
+            android:hint="Mail"
+            android:id="@+id/paymentMail"
+            android:paddingLeft="15dp"
+            >
+
+        </EditText>
+
+        <CheckBox
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Subscribe to News and offers"
+            android:layout_marginLeft="10dp"
+            ></CheckBox>
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="24dp"
+
+            android:text="PAYMENT METHOD"
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="15dp"
+            android:textColor="@color/black"
+            ></TextView>
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="10dp"
+            >
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/paypal"
+                android:text="  Paypal"
+                android:textSize="20dp"
+                tools:ignore="DuplicateIds">
+
+            </RadioButton>
+            <RadioButton
+                android:layout_width="match_parent"
+                android:drawableLeft="@drawable/card"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:text="  Card"
+                >
+
+            </RadioButton>
+
+
+
+        </RadioGroup>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40sp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/ed_bg"
+            android:hint="Card Number"
+
+            android:paddingLeft="15dp"
+            android:textSize="20dp">
+
+        </EditText>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40sp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/ed_bg"
+            android:textSize="20dp"
+            android:hint="Owners Name"
+            android:paddingLeft="15dp"
+            >
+
+        </EditText>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40sp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/ed_bg"
+            android:textSize="20dp"
+            android:hint="monthly/yearly"
+            android:paddingLeft="15dp"
+            >
+
+        </EditText>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/demo"
+            ></TextView>
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="240dp"
+            android:layout_gravity="center"
+            android:layout_height="55dp"
+            android:text="Place Order"
+            android:textColor="@color/white"
+            android:background="@drawable/btn_bg"
+            android:layout_margin="40sp"
+            android:id="@+id/order"
+
+            >
+
+        </androidx.appcompat.widget.AppCompatButton>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="3"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:background="@color/white"
+            tools:context=".DartboardActivity"
+
+            >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+
+                >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="40sp"
+
+                    android:layout_gravity="center"
+                    android:padding="5dp"
+                    android:src="@drawable/home"
+
+                    >
+
+                </ImageView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Home">
+
+                </TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="40sp"
+
+                    android:src="@drawable/catalog"
+                    android:padding="5dp"
+                    android:layout_gravity="center"
+
+                    >
+
+                </ImageView>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Catalog"
+                    >
+
+                </TextView>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                >
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="40sp"
+
+                    android:src="@drawable/cart"
+                    android:padding="5dp"
+                    android:layout_gravity="center"
+
+                    >
+
+                </ImageView>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Busket"
+                    >
+
+                </TextView>
+            </LinearLayout>
+
+
+
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="160dp"
+    android:layout_height="185dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="3dp"
+    android:layout_margin="10dp">
+
+    <LinearLayout
+        android:id="@+id/background_color"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="5dp"
+        tools:ignore="ExtraText">
+
+
+        <ImageView
+
+            android:id="@+id/phone_image"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/laptop" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="18dp"
+            android:text="This is a cool Laptop"
+            android:layout_marginBottom="4dp"
+
+            >
+
+        </TextView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="$599.99"
+            android:textSize="16sp"
+            android:paddingLeft="4dp"
+            android:textColor="#FF0000"
+            >
+
+        </TextView>
+        <RatingBar
+            style="?android:attr/ratingBarStyleIndicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:isIndicator="false"
+            android:max="4"
+            android:numStars="4"
+            android:rating="3"
+            android:scaleX=".5"
+            android:scaleY=".5"
+            android:layout_marginLeft="-34dp"
+            android:theme="@style/MyRatingBar" />
+
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="160dp"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="4dp"
+    android:layout_margin="5dp">
+
+    <LinearLayout
+        android:id="@+id/background_color"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="2dp"
+        tools:ignore="ExtraText">
+
+
+        <ImageView
+
+            android:id="@+id/phone_image5"
+            android:layout_width="match_parent"
+            android:layout_height="155dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/a1" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="3dp"
+            android:id="@+id/fifthrvttl"
+            android:layout_marginBottom="4dp"
+            android:text="Samsung A20 6GB/128GB Smartphone (Official)"
+            android:textColor="@color/black"
+
+            >
+
+        </TextView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TK 28599.99"
+            android:textSize="12dp"
+            android:gravity="center"
+            android:paddingLeft="4dp"
+            android:id="@+id/previousPriceId"
+            android:textColor="#000000"
+            >
+
+        </TextView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TK 25599.99"
+            android:textSize="18sp"
+            android:id="@+id/newpriceId"
+            android:gravity="center"
+            android:paddingLeft="4dp"
+            android:textColor="#FF0000"
+            >
+
+        </TextView>
+        <RatingBar
+            style="?android:attr/ratingBarStyleIndicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:isIndicator="false"
+            android:max="4"
+            android:numStars="5"
+            android:rating="4"
+            android:scaleX=".5"
+            android:scaleY=".5"
+            android:id="@+id/ratingbar"
+            android:theme="@style/MyRatingBar" />
+
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

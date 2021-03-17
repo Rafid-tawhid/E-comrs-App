@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="7dp"
+    android:padding="3dp"
+    android:layout_margin="5dp"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:padding="3dp"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:background="@drawable/ed_bg"
+            android:scaleType="fitXY"
+            android:src="@drawable/shoe">
+
+        </ImageView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Price:$399.99"
+            android:textSize="18dp"
+            android:gravity="center"
+            android:id="@+id/prc"
+            android:layout_marginRight="10dp"
+            android:textColor="#FF0000"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/img"
+            android:layout_marginLeft="10dp"
+            ></TextView>
+
+        <TextView
+            android:id="@+id/msg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+           android:layout_toRightOf="@+id/img"
+
+            android:text="Confirm delete?"
+            android:gravity="center"
+            android:textColor="@color/black"
+
+
+            android:textSize="22dp"></TextView>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginLeft="135dp"
+           android:layout_below="@+id/msg"
+            android:layout_marginBottom="10dp"
+            android:orientation="vertical"
+            android:layout_alignParentRight="true"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18dp"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:text="723JY2"
+                    android:id="@+id/nm"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    >
+
+                </TextView>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:text="formal"
+                    android:visibility="gone"
+                    android:id="@+id/tp"
+                    android:textColor="@color/black"
+                    android:textSize="16dp">
+
+                </TextView>
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Edit"
+            android:selectAllOnFocus="false"
+            android:linksClickable="false"
+            android:autoLink="all"
+            android:textColor="@color/black"
+            android:textStyle="italic"
+            android:id="@+id/edit"
+            android:textSize="20dp"
+            android:visibility="gone"
+            android:layout_marginLeft="-45dp"
+            android:layout_below="@+id/prc"
+
+            android:layout_toRightOf="@+id/prc"
+            ></TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Delete"
+            android:layout_marginLeft="35dp"
+            android:selectAllOnFocus="false"
+            android:linksClickable="false"
+            android:autoLink="all"
+            android:textColor="@color/black"
+            android:textStyle="italic"
+            android:id="@+id/dlt"
+            android:textSize="20dp"
+
+            android:layout_below="@+id/prc"
+            android:layout_alignParentRight="true"
+            android:layout_margin="10dp"
+            ></TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cancel"
+            android:layout_marginLeft="35dp"
+            android:selectAllOnFocus="false"
+            android:linksClickable="false"
+            android:autoLink="all"
+            android:textColor="@color/black"
+            android:textStyle="italic"
+            android:id="@+id/cncl"
+            android:textSize="20dp"
+
+            android:layout_below="@+id/prc"
+           android:layout_toLeftOf="@+id/dlt"
+            android:layout_margin="10dp"
+            ></TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="--"
+            android:textSize="20dp"
+            android:layout_marginLeft="18dp"
+            android:gravity="center"
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp"
+            android:selectAllOnFocus="false"
+            android:linksClickable="false"
+            android:autoLink="all"
+            android:textColor="@color/black"
+            android:textStyle="italic"
+            android:id="@+id/minus"
+            android:visibility="gone"
+
+            ></TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1"
+            android:textSize="20dp"
+
+            android:layout_marginLeft="12dp"
+            android:gravity="center"
+
+            android:selectAllOnFocus="false"
+            android:linksClickable="false"
+            android:autoLink="all"
+            android:textColor="@color/black"
+            android:textStyle="italic"
+            android:id="@+id/one"
+           android:visibility="gone"
+
+            ></TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+"
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp"
+            android:textSize="20dp"
+            android:id="@+id/plus"
+            android:layout_marginLeft="12dp"
+
+
+            android:selectAllOnFocus="false"
+            android:linksClickable="false"
+            android:autoLink="all"
+            android:textColor="@color/black"
+            android:textStyle="italic"
+            android:layout_below="@+id/prc"
+        android:visibility="gone"
+            ></TextView>
+
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
