@@ -46,7 +46,7 @@ import com.smarteist.autoimageslider.SliderView;
 import java.util.ArrayList;
 import java.util.List;
 
-public class MainActivity extends AppCompatActivity implements adapterphone.ListItemClickListener {
+public class  MainActivity extends AppCompatActivity implements adapterphone.ListItemClickListener {
 
 
     //    drawer code
